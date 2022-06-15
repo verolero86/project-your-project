@@ -5,9 +5,11 @@
 and current schedule to easily visualize if your project is projected to be on
 track or not.
 
-This project uses the excellent tutorial as the base and adds customizations:
-
-https://towardsdatascience.com/gantt-charts-with-pythons-matplotlib-395b7af72d72
+This project uses the excellent
+[tutorial](https://towardsdatascience.com/gantt-charts-with-pythons-matplotlib-395b7af72d72)
+by [Thiago Carvalho](https://github.com/Thiagobc23/) as the base and adds
+customizations to support the addition of the baseline schedule in the same
+timeline.
 
 ## Usage
 
@@ -26,7 +28,9 @@ The code currently requires the following arguments:
 
 An example using a timeline with four categories:
 
-`./project-your-project.py -i my_project_schedule.xlsx -t "Timeline Title" -o ./timeline_ -c "One Category" "Another Category" "Category Z" "Baseline" -x "#000000" "#ff0000" "#00ff00" "#0000ff" -b 0.8 0.8 0.8 0.3`
+```
+./project-your-project.py -i my_project_schedule.xlsx -t "Timeline Title" -o ./timeline_ -c "One Category" "Another Category" "Category Z" "Baseline" -x "#000000" "#ff0000" "#00ff00" "#0000ff" -b 0.8 0.8 0.8 0.3
+```
 
 ## Author 
 
