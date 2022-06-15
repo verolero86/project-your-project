@@ -27,3 +27,9 @@ The code currently requires the following arguments:
 An example using a timeline with four categories:
 
 `./project-your-project.py -i my_project_schedule.xlsx -t "Timeline Title" -o ./timeline_ -c "One Category" "Another Category" "Category Z" "Baseline" -x "#000000" "#ff0000" "#00ff00" "#0000ff" -b 0.8 0.8 0.8 0.3`
+
+## Author 
+
+[@verolero86](https://github.com/verolero86)
+
+
