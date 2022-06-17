@@ -36,6 +36,7 @@ SMALL_SIZE = 10
 MEDIUM_SIZE = 11
 BIGGER_SIZE = 16
 dateformat = '%Y%m%d_%H%M' # e.g., 20220519_2334
+datestamp = datetime.strftime(datetime.now(),dateformat)
 
 plt.rc('font', size=MEDIUM_SIZE)          # controls default text sizes
 plt.rc('axes', titlesize=MEDIUM_SIZE)     # fontsize of the axes title
@@ -47,8 +48,8 @@ plt.rc('figure', titlesize=BIGGER_SIZE)  # fontsize of the figure title
 
 # set up project specific values
 proj_infile = args.inputfile
-proj_title = args.title
-proj_outfile = args.outfilepre + datetime.strftime(datetime.now(),dateformat) + '.jpg'
+proj_title = args.title + '(' + datestamp + ')'
+proj_outfile = args.outfilepre + datestamp + '.jpg'
 proj_categories = args.categories
 proj_colors = args.hexcolors
 proj_heights = args.barheights
@@ -150,6 +151,7 @@ ax_top.spines['left'].set_visible(False)
 ax_top.spines['top'].set_visible(False)
 
 plt.suptitle(proj_title)
+ax1.set_title('powered by project-your-project',loc='right')
 
 ##### LEGENDS #####
 c_dict = dict(zip(proj_categories, proj_colors))
