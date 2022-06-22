@@ -33,12 +33,12 @@ parser.add_argument("-b", "--barheights", nargs='+', type=float, help="Project's
 args = parser.parse_args()
 
 SMALL_SIZE = 10
-MEDIUM_SIZE = 11
+MEDIUM_SIZE = 14
 BIGGER_SIZE = 16
 dateformat = '%Y%m%d_%H%M' # e.g., 20220519_2334
 datestamp = datetime.strftime(datetime.now(),dateformat)
 
-plt.rc('font', size=MEDIUM_SIZE)          # controls default text sizes
+plt.rc('font', size=BIGGER_SIZE)          # controls default text sizes
 plt.rc('axes', titlesize=MEDIUM_SIZE)     # fontsize of the axes title
 plt.rc('axes', labelsize=MEDIUM_SIZE)    # fontsize of the x and y labels
 plt.rc('xtick', labelsize=MEDIUM_SIZE)    # fontsize of the tick labels
